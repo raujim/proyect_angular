@@ -13,6 +13,7 @@ export const products = [
     price: 799,
     description: 'Un teléfono grande con una de las mejores pantallas',
     photo: 'assets/images/PIXEL_XL.jpg'
+    
   },
   {
     id: 2,

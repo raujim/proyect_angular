@@ -2,11 +2,16 @@
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #616161;
-  box-sizing: border-box;
+  color: #e41212;
+  box-sizing:border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: burlywood;
+  
+ 
 }
+
+
 
 body {
   margin: 0;
@@ -15,6 +20,8 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+
+  
 }
 
 router-outlet + *  {
@@ -58,13 +65,13 @@ input {
   border-radius: 2px;
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #440505;
 }
 
 label {
-  font-size: 12px;
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 16px;
   display: block;
   text-transform: uppercase;
 }
@@ -108,17 +115,17 @@ label {
 
 app-top-bar {
   width: 100%;
-  height: 68px;
+  height: 78px;
   background-color: #1976d2;
   padding: 16px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
+  align-items:last baseline;
 }
 
 app-top-bar h1 {
-  color: white;
+  color: rgb(150, 12, 12);
   margin: 0;
 }
 
@@ -130,11 +137,11 @@ app-top-bar h1 {
   max-width: 450px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:center;
   padding: 16px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #EEEEEE;
+  background-color: #200303;
 }
 
 

@@ -7,6 +7,7 @@
         </mat-card-title>
 
         <mat-card-content>
+
             <h3>
                 <a [title]="product.name+ 'detalles'" [routerLink]="[ '/products', product.id ]">
                     {{ product.name}}
@@ -30,9 +31,7 @@
             <app-product-alerts [product]="product" (notify)="onNotify()">
             </app-product-alerts>
 
-            
             <button type="button" (click)="addToCart(product)">Comprar</button>
-
 
         </mat-card-content>
 </mat-card>

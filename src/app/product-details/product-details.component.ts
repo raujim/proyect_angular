@@ -24,12 +24,12 @@ export class ProductDetailsComponent implements OnInit {
 
   addToCart(product: Product){
     this.cartService.addToCart(product);
-    console.log('Tu producto ha sido añadido correctamente')
+    console.log('Tu producto ha sido añadido con exito')
   }
   share(nombre:string) {
     window.alert('El producto' + nombre+'se ha compartido' );
   }
   onNotify(){
-    window.alert('Se le notificara cuando el producto salga a la venta');
+    window.alert('Se le notificara la compra exitosamente ');
   }
 }
