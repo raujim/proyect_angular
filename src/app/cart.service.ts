@@ -7,10 +7,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CartService {
   items: Product[] = [];
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+
+    this.items = JSON.parse(localStorage.getItem("Items")!);
+   }
+  
+
 
   addToCart(product: Product){
     this.items.push(product)
+
+    localStorage.setItem("Items",JSON.stringify(this.items))
   }
   
   getItems() {
